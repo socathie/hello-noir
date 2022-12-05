@@ -1,5 +1,5 @@
-[default]
-src = 'src'
+[profile.default]
+src = 'circuits/contract'
 out = 'out'
 libs = ['lib']
 

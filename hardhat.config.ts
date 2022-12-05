@@ -27,7 +27,7 @@ const config: HardhatUserConfig = {
     },
   },
   paths: {
-    sources: "./src", // Use ./src rather than ./contracts as Hardhat expects
+    sources: "./circuits/contract", // Use ./src rather than ./contracts as Hardhat expects
     cache: "./cache_hardhat", // Use a different cache for Hardhat than Foundry
   },
   // This fully resolves paths for imports in the ./lib directory for Hardhat
