@@ -53,8 +53,17 @@ describe("TurboVerifier", function () {
         abi.y = 3;
 
         const proof = await create_proof(prover, acir, abi);
-        const sc_verified = await verifierContract.verify(proof); // TODO: resolve error
+        const sc_verified = await verifierContract.verify(proof);
 
         expect(sc_verified).eq(true);
+    });
+
+    it("Should reject false proof in smart contract", async function () {
+        abi.x = 3;
+        abi.y = 3;
+
+        const proof = await create_proof(prover, acir, abi);
+
+        await expect(verifierContract.verify(proof)).to.be.revertedWith("Proof failed");
     });
 });
