@@ -9,7 +9,8 @@
   "scripts": {
     "test": "hardhat test",
     "test:full": "hardhat run scripts/generate_sol_verifier.ts && forge test && hardhat test",
-    "contract": "hardhat run scripts/generate_sol_verifier.ts"
+    "generate:contract": "hardhat run scripts/generate_sol_verifier.ts",
+    "deploy": "bash scripts/deploy.sh"
   },
   "author": "Devan Non <devanon@chainstride.capital>",
   "license": "Apache-2.0",

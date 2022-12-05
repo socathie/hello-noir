@@ -33,6 +33,7 @@ describe("TurboVerifier", function () {
         abi.y = 2;
 
         const proof = await create_proof(prover, acir, abi);
+        console.log(proof.toString("hex"));
         const verified = await verify_proof(verifier, proof);
 
         expect(verified).eq(true);
