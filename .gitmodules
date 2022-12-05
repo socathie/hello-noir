@@ -4,3 +4,6 @@
 [submodule "lib/solmate"]
 	path = lib/solmate
 	url = https://github.com/rari-capital/solmate
+[submodule "ui"]
+	path = ui
+	url = https://github.com/socathie/hello-noir-ui
