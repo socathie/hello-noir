@@ -5,8 +5,6 @@ import path from "path";
 import { compile } from '@noir-lang/noir_wasm';
 import { setup_generic_prover_and_verifier, create_proof, verify_proof } from '@noir-lang/barretenberg/dest/client_proofs';
 
-import { writeFileSync } from "fs";
-
 
 describe("TurboVerifier", function () {
     let verifierContract: any;
@@ -22,7 +20,6 @@ describe("TurboVerifier", function () {
         await verifierContract.deployed();
 
         const compiled_program = compile(path.resolve(__dirname, "../circuits/src/main.nr"));
-        writeFileSync(path.resolve(__dirname, "../circuits/src/main.json"), JSON.stringify(compiled_program));
 
         acir = compiled_program.circuit;
         abi = compiled_program.abi;
