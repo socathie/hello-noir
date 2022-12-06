@@ -1,4 +1,16 @@
-# <h1 align="center"> Hardhat x Foundry Template </h1>
+# <h1 align="center"> hello-noir: Hardhat x Foundry Template </h1>
+
+## Step-by-Step
+
+0. `git submodule update --init --recursive`
+1. `forge install`
+2. `npm install`
+3. `npm run test:full`
+4. `npm run deploy`
+
+The frontend repo is a submodule under `ui/`.
+
+---
 
 **Template repository for getting started quickly with Hardhat and Foundry in one project**
 
