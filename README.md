@@ -1,5 +1,7 @@
 # <h1 align="center"> hello-noir: Hardhat x Foundry Template </h1>
 
+Demo hosted on: https://hello-noir.netlify.app/
+
 ## Step-by-Step
 
 0. `git submodule update --init --recursive`
